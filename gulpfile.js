@@ -37,13 +37,6 @@ function images() {
     .pipe(dest('dist/images'))
 }
 
-function scripts() {
-  return src('app/js/main.js')
-    .pipe(dest('app/js'))
-    .pipe(browserSync.stream())
-}
-
-
 function styles() {
   return src('app/sass/style.sass')
       .pipe(sass({outputStyle: 'compressed'}))
@@ -74,12 +67,11 @@ function watching() {
 exports.styles = styles;
 exports.watching = watching;
 exports.browsersync = browsersync;
-exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
 
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles ,scripts ,browsersync, watching);
+exports.default = parallel(styles,browsersync, watching);
 
 

@@ -69,10 +69,18 @@ body
 .formBtn
 	font-size: 30px
 	padding: 20px 25px
-	border: 1px solid #00ffff
 	color: #fff
 	font-family: "ClinicaBlack"
 	border-radius: 10px
-	background: linear-gradient(#1bcae2, #045ab6)
+	border: 2px solid #4ae9f7
+	background-color: #00ffff
+	background-image: linear-gradient(to top, #045ab6 0%, #1bcae2 100%)
+	box-shadow: 13px 15px 18px rgba(16, 74, 133, 0.48), inset 0 -5px 0 #3fa4b8
 
-
+input
+	cursor: pointer
+	&::placeholder,
+	&::-webkit-input-placeholder,
+	&::-moz-placeholder,
+	&::-ms-input-placeholder,
+		color: #fff

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -243,8 +244,8 @@
 								1.4%
 							</div>
 							<div class="offers__text">
-								Мин. инвестиция: 10 $
-								Макс. инвестиция: 100 $
+								Мин. инвестиция: 10 $ <br>
+								Макс. инвестиция: 100 $ <br>
 								Работает: 90 дней
 							</div>
 							<div class="offers__btn">
@@ -253,17 +254,17 @@
 						</div>
 						<div class="offers__item offers__item--second">
 							<div class="offers__img">
-								<img src="img/icons/offers/rocket.svg" alt="" class="img-svg">
+								<img src="img/icons/offers/growth.svg" alt="" class="img-svg">
 							</div>
 							<div class="offers__itemTitle">
-								RF Start
+								RF Medium
 							</div>
 							<div class="offers__percent">
-								1.4%
+								1.8%
 							</div>
 							<div class="offers__text">
-								Мин. инвестиция: 10 $
-								Макс. инвестиция: 100 $
+								Мин. инвестиция: 10 $ <br>
+								Макс. инвестиция: 100 $ <br>
 								Работает: 90 дней
 							</div>
 							<div class="offers__btn">
@@ -272,18 +273,18 @@
 						</div>
 						<div class="offers__item offers__item--third">
 							<div class="offers__img">
-								<img src="img/icons/offers/rocket.svg" alt="" class="img-svg">
+								<img src="img/icons/offers/strategy.svg" alt="" class="img-svg">
 							</div>
 							<div class="offers__itemTitle">
-								RF Start
+								RF Business
 							</div>
 							<div class="offers__percent">
-								1.4%
+								2.0%
 							</div>
 							<div class="offers__text">
-								Мин. инвестиция: 10 $
-								Макс. инвестиция: 100 $
-								Работает: 90 дней
+								Мин. инвестиция: 100 $ <br> 
+								Макс. инвестиция: 100 $ <br>
+								Работает: 90 дней								
 							</div>
 							<div class="offers__btn">
 								Инвестировать
@@ -291,17 +292,17 @@
 						</div>
 						<div class="offers__item offers__item--fourth">
 							<div class="offers__img">
-								<img src="img/icons/offers/rocket.svg" alt="" class="img-svg">
+								<img src="img/icons/offers/creative.svg" alt="" class="img-svg">
 							</div>
 							<div class="offers__itemTitle">
-								RF Start
+								RF Professional
 							</div>
 							<div class="offers__percent">
-								1.4%
+								2.4%
 							</div>
 							<div class="offers__text">
-								Мин. инвестиция: 10 $
-								Макс. инвестиция: 100 $
+								Мин. инвестиция: 1000 $ <br>
+								Макс. инвестиция: 100 $ <br>
 								Работает: 90 дней
 							</div>
 							<div class="offers__btn">
@@ -376,12 +377,48 @@
 						Калькулятор дохода <span>04</span>
 					</h2>
 					<h3 class="calc__subtitle subtitle">
-						Определитесь с суммой и валютой <span>вклада</span> и просчитайте свой возможный заработок!
-						Помните, что Ваш доход также зависит от выбранного <span>пакета</span>
+						Определитесь с суммой и валютой <span>вклада</span> и просчитайте свой возможный заработок! <br>
+						Помните, что Ваш доход также зависит от выбранного <span>пакета</span> <br>
 						и <span>процента</span> реинвестирования.
 					</h3>
 					<div class="calc__block">
-
+						<div class="calc__nav">
+							<div class="calc__currency">
+								<span>Валюта</span>
+								<select name="" id="">
+									<option value="10">
+										1
+									</option>
+									<option value="77">
+										2
+									</option>
+								</select>
+							</div>
+							<div class="calc__input">
+								<span>Сумма</span>
+								<input type="text" name="sum" value="0.00100036" placeholder="0.00100036 ">
+							</div>
+							<div class="calc__plan">
+								<span>Пакет</span>
+								<select name="" id="">
+									<option value="10">
+										RF Start
+									</option>
+								</select>
+							</div>
+						</div>
+						<div class="calc__percent">
+							<div class="calc__percentTitle">
+								Процент реинвестирования
+							</div>
+							<div class="calc__line">
+								<input type="range" min="1" max="100" value="30" class="calc__lineItem" id="myRange">
+							</div>
+							<div class="calc__percentCount">
+								<span>30</span> %
+							</div>
+						</div>
+						
 					</div>
 					<div class="calc__info">
 						<div class="calc__infoItem">
@@ -389,7 +426,7 @@
 								За час:
 							</div>
 							<div class="calc__sum">
-								0.00256250 <span>BTC</span>
+								<div class="calc__period--hour"></div> <span>BTC</span>
 							</div>
 						</div>
 						<div class="calc__infoItem">
@@ -397,7 +434,7 @@
 								За день:
 							</div>
 							<div class="calc__sum">
-								0.00256250 <span>BTC</span>
+								<div class="calc__period--day"></div> <span>BTC</span>
 							</div>
 						</div>
 						<div class="calc__infoItem">
@@ -405,24 +442,245 @@
 								За неделю:
 							</div>
 							<div class="calc__sum">
-								0.00256250 <span>BTC</span>
+								<div class="calc__period--week">0.00256250</div><span>BTC</span>
 							</div>
 						</div>
 						<div class="calc__infoItem">
 							<div class="calc__period">
 								За месяц:
 							</div>
-							<div class="calc__sum">
-								0.00256250 <span>BTC</span>
+							<div class="calc__sum ">
+								<div class="calc__period--month"></div> <span>BTC</span>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="transactions">
+				<div class="container">
+					<h2 class="transactions__title title">
+						Последние транзакции <span>05</span>
+					</h2>
+					<h3 class="transactions__subtitle subtitle">
+						Ознакомьтесь со <span>статистикой</span> наших пользователей! <br>
+						Заметим, что ввод и вывод осуществляется <span>моментально</span> на платёжные системы: Visa/MasterCard/МИР,
+						Yandex Money, Qiwi Wallet , Payeer, AdvCash, Perfect Money, Bitcoin, Ethereum и др.
+					</h3>
+					<div class="transactions__buttons">
+						<div class="transactions__btn transactions__btn--depo">
+							Депозит
+						</div>
+						<div class="transactions__btn transactions__btn--exch">
+							Вывод
+						</div>
+					</div>
+					<div class="transactions__overflow">
+						<table class="transactions__table">
+							<tr>
+								<td class="transactions__top">Партнёр</td>
+								<td class="transactions__top">Дата</td>
+								<td class="transactions__top">Сумма</td>
+								<td class="transactions__top transactions__top--currency">Валюта</td>
+								<td class="transactions__top transactions__top--time">План</td>
+							</tr>
+							<tr>
+								<td class="transactions__name">
+									<div class="transactions__icon">
+										<img src="img/icons/general/user-table.svg" alt="" class="img-svg">
+									</div> Jim Adams</td>
+								<td class="transactions__date">2021-04-13 <span>17:28:04</span></td>
+								<td class="transactions__sum">139.000000</td>
+								<td class="transactions__currency">Dollar</td>
+								<td class="transactions__time">4 дня назад</td>
+							</tr>
+							<tr>
+								<td class="transactions__name">
+									<div class="transactions__icon">
+										<img src="img/icons/general/user-table.svg" alt="" class="img-svg">
+									</div> Jim Adams</td>
+								<td class="transactions__date">2021-04-13 <span>17:28:04</span></td>
+								<td class="transactions__sum">139.000000</td>
+								<td class="transactions__currency">Dollar</td>
+								<td class="transactions__time">4 дня назад</td>
+							</tr>
+							<tr>
+								<td class="transactions__name">
+									<div class="transactions__icon">
+										<img src="img/icons/general/user-table.svg" alt="" class="img-svg">
+									</div> Jim Adams</td>
+								<td class="transactions__date">2021-04-13 <span>17:28:04</span></td>
+								<td class="transactions__sum">139.000000</td>
+								<td class="transactions__currency">Dollar</td>
+								<td class="transactions__time">4 дня назад</td>
+							</tr>
+							<tr>
+								<td class="transactions__name">
+									<div class="transactions__icon">
+										<img src="img/icons/general/user-table.svg" alt="" class="img-svg">
+									</div> Jim Adams</td>
+								<td class="transactions__date">2021-04-13 <span>17:28:04</span></td>
+								<td class="transactions__sum">139.000000</td>
+								<td class="transactions__currency">Dollar</td>
+								<td class="transactions__time">4 дня назад</td>
+							</tr>
+							<tr>
+								<td class="transactions__name">
+									<div class="transactions__icon">
+										<img src="img/icons/general/user-table.svg" alt="" class="img-svg">
+									</div> Jim Adams</td>
+								<td class="transactions__date">2021-04-13 <span>17:28:04</span></td>
+								<td class="transactions__sum">139.000000</td>
+								<td class="transactions__currency">Dollar</td>
+								<td class="transactions__time">4 дня назад</td>
+							</tr>
+							<tr>
+								<td class="transactions__name">
+									<div class="transactions__icon">
+										<img src="img/icons/general/user-table.svg" alt="" class="img-svg">
+									</div> Jim Adams</td>
+								<td class="transactions__date">2021-04-13 <span>17:28:04</span></td>
+								<td class="transactions__sum">139.000000</td>
+								<td class="transactions__currency">Dollar</td>
+								<td class="transactions__time">4 дня назад</td>
+							</tr>
+							<tr>
+								<td class="transactions__name">
+									<div class="transactions__icon">
+										<img src="img/icons/general/user-table.svg" alt="" class="img-svg">
+									</div> Jim Adams</td>
+								<td class="transactions__date">2021-04-13 <span>17:28:04</span></td>
+								<td class="transactions__sum">139.000000</td>
+								<td class="transactions__currency">Dollar</td>
+								<td class="transactions__time">4 дня назад</td>
+							</tr>
+							<tr>
+								<td class="transactions__name">
+									<div class="transactions__icon">
+										<img src="img/icons/general/user-table.svg" alt="" class="img-svg">
+									</div> Jim Adams</td>
+								<td class="transactions__date">2021-04-13 <span>17:28:04</span></td>
+								<td class="transactions__sum">139.000000</td>
+								<td class="transactions__currency">Dollar</td>
+								<td class="transactions__time">4 дня назад</td>
+							</tr>
+							<tr>
+								<td class="transactions__name">
+									<div class="transactions__icon">
+										<img src="img/icons/general/user-table.svg" alt="" class="img-svg">
+									</div> Jim Adams</td>
+								<td class="transactions__date">2021-04-13 <span>17:28:04</span></td>
+								<td class="transactions__sum">139.000000</td>
+								<td class="transactions__currency">Dollar</td>
+								<td class="transactions__time">4 дня назад</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="partner">
+				<div class="container">
+					<h2 class="partner__title title">
+						Партнёрская программа <span>06</span>
+					</h2>
+					<h3 class="partner__subtitle subtitle">
+						Мы позаботились о наилучшем решении для вашего бизнеса! <br>
+						Приглашайте друзей, рекламируйте партнерскую ссылку. <br>
+						Зарабатывайте вместе без ограничений!
+					</h3>
+					<div class="partner__block">
+						<div class="partner__ref">
+							<img src="img/icons/partner/management.svg" alt="" class="img-svg">
+							<div class="partner__refText">
+								Зарабатывайте до <span class="partner__refBlack">10%</span> <br>
+								<span class="partner__refBold">реферальных</span> наград!
+							</div>
+						</div>
+						<div class="partner__info">
+							<a href="#" class="partner__btn">Получить персональную ссылку</a>
+							<div class="partner__text">
+								<span class="partner__infoGreen">
+									Ознакомиться
+								</span> с нашей <br>
+								<span class="partner__infoBold">партнёрской программой</span>
+							</div>
+							<img src="img/icons/stage/right-arrow.svg" alt="" class="img-svg partner__arrow">
+						</div>
+					</div>
+				</div>
+				<img src="img/bg/bg-program.png" alt="" class="partner__img">
+			</div>
+
+			<div class="train-video">
+				<div class="container">
+					<h2 class="train-video__title title">
+						Обучающий видеоролик <span>07</span>
+					</h2>
+					<h3 class="train-video__subtitle subtitle">
+						Начать зарабатывать с нами довольно просто! <br>
+						Наш <span>двухминутный видеоролик</span> расскажет Вам обо всех этапах работы <br>
+						и поможет лучше сориентироваться в процессе.
+					</h3>
+					<div class="train-video__block">
+						<img id="video1" class="" src="img/bg/video_bg.jpg"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="invest-form">
+				<div class="container">
+					<div class="invest-form__block">
+						<div class="invest-form__left">
+							<h2 class="invest-form__title bigTitle">
+								Инвестируй сегодня!
+							</h2>
+							<h3 class="invest-form__subtitle">
+								Успешным быть легко
+							</h3>
+							<p class="invest-form__text">
+								Пройдя простейшую процедуру регистрации, Вы получаете
+								доступ к инвестиционным кейсам. Каждый из наших тарифов
+								был проработан и просчитан, чтобы дать лучший результат
+								за любой из доступных сроков.
+							</p>
+						</div>
+						<form class="invest-form__right" method="POST" action="">
+							<input type="text" placeholder="Ваш E-Mail">
+							<button class="invest-form__btn formBtn">
+								Присоединиться
+							</button>
+						</form>
 					</div>
 				</div>
 			</div>
 
 		</main>
 		<footer class="footer">
-
+			<div class="container">
+				<div class="footer__block">
+					<a href="index.html" class="footer__logo">
+						<img src="img/icons/general/footer-logo.svg" alt="" class="img-svg">
+					</a>
+					<div class="footer__rights">
+						copyright 2021
+					</div>
+					<div class="footer__social">
+						<a href="#">
+							<img src="img/icons/social/telegram.svg" alt="" class="img-svg">
+						</a>
+						<a href="#">
+							<img src="img/icons/social/instagram.svg" alt="" class="img-svg">
+						</a>
+						<a href="#">
+							<img src="img/icons/social/whatsapp.svg" alt="" class="img-svg">
+						</a>
+						<a href="#">
+							<img src="img/icons/social/twitter.svg" alt="" class="img-svg">
+						</a>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 
@@ -431,6 +689,7 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
