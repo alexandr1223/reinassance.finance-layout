@@ -1,0 +1,71 @@
+.header
+    background: #E0E9F9
+    height: 100px
+    &__nav
+        display: flex
+        align-items: center
+        height: 100px
+    &__menu
+        margin-right: 150px
+        svg
+            width: 66px
+            fill: #045AB6
+            height: auto
+    &__lang
+        position: relative
+        &:hover
+            .header__langBlock
+                opacity: 1
+    &__langLink
+        display: flex
+        align-items: center
+        margin-right: 140px
+        cursor: pointer
+    &__langLogo
+        width: 40px
+        margin-right: 10px
+        height: auto
+        svg
+            width: 40px
+    &__langBlock
+        opacity: 0
+        position: absolute
+        display: flex
+        top: 40px
+        left: -10px
+        padding: 10px
+        padding-top: 20px
+        background: 
+        width: 86px
+        background: #E0E9F9
+        transition: .4s
+        svg
+            height: auto
+    &__logo
+        margin-right: 100px
+    &__support
+        display: flex
+        align-items: center
+        margin-right: 85px
+        cursor: pointer
+        span
+            white-space: nowrap
+            display: block
+            font-size: 16px
+            margin-right: 10px
+            color: #045AB6
+            font-family: "ClinicaMedium"
+    &__supportIcon
+        width: 40px
+        margin-right: 10px
+        fill: #045AB6
+    &__login
+        cursor: pointer
+        svg
+            width: 40px
+            fill: #045AB6
+        
+.downArrow
+    width: 16px
+    fill: #045AB6
+        

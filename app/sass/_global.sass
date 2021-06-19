@@ -1,0 +1,78 @@
+html,
+body 
+	height: 100%
+	background: #E0E9F9
+	font-family: "ClinicaMedium"
+
+.wrapper 
+	display: flex
+	flex-direction: column
+	min-height: 100%
+
+.main 
+	flex: 1 0 auto
+
+.footer 
+	flex: 0 0 auto
+
+.container
+  max-width: 1240px
+  margin: 0 auto
+  padding: 0 15px
+
+.title
+	font-family: "ClinicaBlack"
+	font-size: 48px
+	text-align: center
+	color: #045AB6
+	position: relative
+	width: max-content
+	display: flex
+	margin: 0 auto
+	margin-bottom: 60px
+	span
+		font-size: 32px
+		color: #04B682
+		position: relative
+		bottom: 0px
+		margin-left: 16px
+	&::after
+		content: ''
+		position: absolute
+		bottom: -30px
+		left: 50%
+		transform: translateX(-50%)
+		width: 100px
+		height: 2px
+		background-color: #1e5893
+		background-image: linear-gradient(to right, #045ab6 0%, #04b682 100%)
+
+.subtitle
+	margin: 0 auto
+	font-size: 20px
+	line-height: 30px
+	font-family: "ClinicaMedium"
+	text-align: center
+	margin-bottom: 80px
+	max-width: 1000px
+	color: #3a445f
+	font-weight: 500
+	span
+		font-family: "ClinicaBold"
+
+.bigTitle
+	font-size: 110px
+	color: #fff
+	font-family: "ClinicaBlack"
+	line-height: 100%
+
+.formBtn
+	font-size: 30px
+	padding: 20px 25px
+	border: 1px solid #00ffff
+	color: #fff
+	font-family: "ClinicaBlack"
+	border-radius: 10px
+	background: linear-gradient(#1bcae2, #045ab6)
+
+

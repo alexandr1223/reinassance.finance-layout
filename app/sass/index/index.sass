@@ -1,0 +1,292 @@
+.first
+    background: url('../img/bg/header.png') center center/cover no-repeat
+    padding-top: 50px
+    padding-bottom: 60px
+    &__nav
+        display: flex
+        justify-content: space-between
+        padding-bottom: 30px
+        &::after
+        li
+            a
+                font-size: 22px
+                color: #fff
+                font-family: "ClinicaMedium"
+                line-height: 100%
+                &:hover
+                    color: #77e7ff
+            .active
+                color: #77e7ff
+
+    &__nums
+        display: flex
+    &__item
+        font-size: 56px
+        color: #77e7ff
+        font-family: "ClinicaBlack"
+        white-space: nowrap
+        span
+            display: block
+            font-size: 18px
+            margin-top: 5px
+        &:not(:last-child)
+            margin-right: 130px
+    &__subtitle
+        margin-top: 115px
+        font-size: 36px
+        color: #77e7ff
+        text-transform: uppercase
+        font-family: "ClinicaBold"
+    &__title
+        margin-top: 60px
+        margin-bottom: 60px 
+    &__text
+        font-size: 20px
+        color: #77e7ff
+        width: 530px
+        margin-bottom: 60px
+        font-family: "ClinicaMedium"
+        line-height: 140%
+        font-weight: 400
+    &__form
+        display: flex
+        margin-bottom: 110px
+    &__input
+        width: 300px
+        height: 80px
+        margin-right: 20px
+        font-size: 22px
+        font-family: "ClinicaMedium"
+        padding: 30px 20px
+        border: none
+        color: #fff
+        background: url('../img/icons/general/input-bg.png') center center/cover no-repeat
+        &::placeholder,
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder,
+        &::-ms-input-placeholder,
+            color: #fff
+    &__btn
+        height: 80px
+
+.features
+    padding: 100px
+    &__block
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 0 20px
+    &__item
+        padding: 35px 20px
+        border-radius: 10px
+        &--first
+            background-color: #dae3f3
+            background-image: linear-gradient(-222deg, #cdedf5 0%, #dae3f3 90%, #dae3f3 100%)
+        &--second
+            background-color: #dae3f3
+            background-image: linear-gradient(-222deg, #d5f3ee 0%, #dae3f3 90%, #dae3f3 100%)
+        &--third
+            background-color: #dae3f3
+            background-image: linear-gradient(-222deg, #d0e1f7 0%, #dae3f3 90%, #dae3f3 100%)
+        svg
+            display: block
+            margin: 0 auto
+            width: 184px
+            margin-bottom: 65px
+    &__itemTitle
+        font-family: "ClinicaBlack"
+        margin-bottom: 36px
+        text-align: center
+        font-size: 28px
+        color: #3a445f
+    &__itemText
+        font-size: 20px
+        line-height: 130%
+        text-align: center
+        font-family: "ClinicaMedium"
+        color: #8498b5
+
+.work-stage
+    position: relative
+    &__bg
+        position: absolute
+        width: 100%
+        left: 0
+        top: 275px
+        z-index: -1
+    &__block
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 80px
+        z-index: 10
+    &__item
+        margin-top: 110px
+        &--center
+            margin-top: 65px
+        svg
+            display: block
+            margin: 0 auto
+            width: 160px
+            height: 160px
+    &__img1
+        margin-left: 110px !important
+    &__img3
+        margin-left: 90px !important
+    &__itemTitle
+        font-family: "ClinicaBlack"
+        margin-bottom: 36px
+        text-align: center
+        font-size: 28px
+        color: #3a445f
+    &__itemText
+        font-size: 20px
+        line-height: 130%
+        text-align: center
+        font-family: "ClinicaMedium"
+        color: #8498b5
+    &__nums
+        font-family: "Argon"
+        font-size: 120px
+        text-align: center
+        margin: 56px auto
+        margin-top: 30px
+        color: #04b682
+    &__nums1
+        margin-left: 30px
+    &__arrow
+        margin: 0 auto
+        width: 78px
+        height: 80px
+        margin-top: 60px
+        &--center
+            margin-top: 105px
+
+.offers
+    &__block
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-gap: 20px
+    &__item
+        border-radius: 10px
+        padding: 30px 28px 45px 28px
+        &--first
+            background: url('../img/icons/offers/offer-bg1.jpg') center center/cover no-repeat
+        &--second
+            background: url('../img/icons/offers/offer-bg2.jpg') center center/cover no-repeat
+        &--third
+            background: url('../img/icons/offers/offer-bg3.jpg') center center/cover no-repeat
+        &--fourth
+            background: url('../img/icons/offers/offer-bg4.jpg') center center/cover no-repeat
+    &__img
+        width: 140px
+        height: 140px
+        margin: 0 auto
+        position: relative
+        background-color: #045ab6
+        border-radius: 50%
+        margin-bottom: 30px
+        svg
+            width: 80px
+            height: 80px
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            fill: linear-gradient(to top, #04b682 0%, #77e7ff 100%)
+    &__itemTitle
+        font-size: 36px
+        font-family: "ClinicaBold"
+        text-align: center
+        color: #77e7ff
+        margin-bottom: 18px
+        line-height: 100%
+    &__percent
+        font-size: 60px
+        font-family: "ClinicaBold"
+        text-align: center
+        margin-bottom: 18px
+        color: #fff
+        line-height: 100%
+    &__text
+        font-family: "ClinicaMedium"
+        font-size: 18px
+        text-align: center
+        color: #fff
+        margin-bottom: 20px
+        line-height: 24px
+    &__btn
+        box-shadow: inset 0 -1px 0 #77e7fe
+        border-radius: 10px
+        background-color: #77e7ff
+        background-image: linear-gradient(to top, #3ba8d7 0%, #77e7ff 100%)
+        color: #045ab6
+        font-size: 24px
+        text-align: center
+        padding: 18px 30px
+
+.min-investment
+    padding-top: 100px
+    padding-bottom: 100px
+    &__title
+        font-size: 36px
+        text-align: center
+        color: #3a445f
+        font-family: "ClinicaBlack"
+    &__block
+        margin-top: 80px
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 20px
+    &__item
+        background-color: #d7e1f2
+        padding: 20px 10px 20px 20px
+        display: flex
+        align-items: center
+        &:nth-child(even)
+            background-color: #d1e1ee
+    &__logo
+        width: 60px
+        height: 60px
+        border-radius: 50%
+        background: #fff
+        position: relative
+        margin-right: 20px
+        svg
+            height: 36px
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            fill: 
+    &__text
+        font-family: "ClinicaBlack"
+        font-size: 30px
+        color: #8498b5
+        span
+            color: #3a445f
+            
+.calc
+    &__info
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        border-radius: 10px
+        background-color: #0e81b6
+    &__infoItem
+        height: 200px
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        &:nth-child(even)
+            background-color: #279db6
+    &__period
+        font-size: 24px
+        color: #dae3f3
+        margin-bottom: 40px
+    &__sum
+        font-size: 24px
+        color: #77e7ff
+        font-family: "ClinicaBold"
+        span
+            color: #dae3f3
+            font-family: "ClinicaMedium"
+        
