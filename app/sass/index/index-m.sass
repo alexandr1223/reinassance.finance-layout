@@ -274,8 +274,7 @@
     .features
         padding: 60px 0
         &__block
-            display: flex
-            flex-direction: column
+            grid-template-columns: 1fr
         &__item
             width: 100%
             max-width: 400px
@@ -292,8 +291,7 @@
     .work-stage
         padding-bottom: 60px
         &__block
-            display: flex
-            flex-direction: column
+            grid-template-columns: 1fr
         &__item
             margin: 0 auto !important
             svg
@@ -318,8 +316,8 @@
     .offers
         padding-bottom: 60px
         &__block
-            display: flex
-            flex-direction: column
+            display: grid
+            grid-template-columns: 1fr
         &__item
             width: 85%
             max-width: 300px
@@ -339,8 +337,7 @@
             font-size: 28px
         &__block
             margin-top: 30px
-            display: flex
-            flex-direction: column
+            grid-template-columns: 1fr
             grid-gap: 10px
             display: none
             &--mobile
@@ -377,8 +374,8 @@
             border-radius: 0
             margin-bottom: 0px
         &__nav
-            display: flex
-            flex-direction: column
+            display: grid
+            grid-template-columns: 1fr
             grid-gap: 20px
         &__currency
             span
@@ -561,7 +558,8 @@
             li
                 &:not(:last-child)
                     margin-bottom: 15px
-                a
+                a,
+                span
                     font-size: 16px
         &__lang
             display: flex
@@ -596,8 +594,7 @@
         overflow-y: scroll
         padding-bottom: 30px
         &__form
-            display: flex
-            flex-direction: column
+            grid-template-columns: 1fr
             grid-gap: 0
         &__sms
             font-size: 14px

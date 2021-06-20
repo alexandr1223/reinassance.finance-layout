@@ -1,0 +1,123 @@
+.faq
+    padding-top: 100px
+    padding-bottom: 100px
+    &__text
+        margin-top: 12px
+    &__subtitle
+        max-width: 620px
+
+.accordeon
+    height: 100%
+    margin-top: 80px
+    &__panel
+        position: relative
+        border-bottom: 1px solid #8396b4
+        &:not(:last-child)
+            margin-bottom: 40px
+    &__heading 
+        display: block
+        position: relative
+        cursor: pointer
+        transition: .4s
+        font-size: 36px
+        font-family: "ClinicaBlack"
+        margin-left: 20px
+        color: #3a445f
+        span
+            font-size: 18px
+            color: #045ab6
+            position: absolute
+            left: -30px
+            top: 4px
+    &__open
+        display: flex
+        margin-top: 40px
+        align-items: center
+        cursor: pointer
+        margin-bottom: 20px
+
+    &__collapse
+        display: none
+        p
+            font-size: 17px
+            font-weight: 400
+            margin: 20px 30px 0 20px
+            position: relative
+            margin-bottom: 40px
+            line-height: 150%
+        
+    .ins
+        span
+            text-shadow: 0 0 .75px #333, 0 0 .75px #333
+        .accordeon__plus
+            span
+                &:last-child
+                    transform: rotate(90deg)
+                    opacity: 0
+                    top: -11px
+                    right: 50%
+
+    &__plus
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        background-color: #04b682
+        position: relative
+        span
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            display: block
+            width: 19px
+            height: 2px
+            padding: 0
+            background: #fff
+            transition: .4s
+            &:last-child
+                width: 2px
+                height: 19px
+                position: absolute
+                right: 40%
+                top: 50%
+                background: #fff
+                transform: translate(-50%, -50%)
+    &__text
+        margin-left: 20px
+        font-size: 20px
+        color: #04b682
+
+.map
+    padding: 120px 0
+    &__list
+        li
+            display: flex
+            flex-direction: column
+            a
+                position: relative
+                font-family: "JostMedium"
+                font-weight: 500
+                &::before
+                    content: ''
+                    position: absolute
+                    left: -20px
+                    top: 50%
+                    transform: translateY(-50%)
+                    height: 3px 
+                    width: 12px
+                    background: #F5B316
+                    margin-right: 12px
+    &__main
+        font-size: 20px
+        margin-bottom: 24px
+        margin-left: 20px
+        &--list
+            margin-bottom: 8px
+    &__small
+        margin-bottom: 8px
+        font-size: 17px
+        margin-left: 24px
+        &::before
+            display: none
+        &:last-child
+            margin-bottom: 24px

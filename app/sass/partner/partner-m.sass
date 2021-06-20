@@ -1,0 +1,43 @@
+@media (max-width: 1250px)
+    .container
+        width: 100%
+    .partner-ref
+        &__overflow
+            overflow-x: auto
+    .partner-one
+        max-width: 800px
+        margin: 0 auto
+        &__overflow
+            display: flex
+            flex-direction: column
+            overflow-x: auto
+            
+@media (max-width: 767px)
+    .partner-ref
+        padding-bottom: 50px
+        padding-top: 40px
+        &__table
+            td
+                font-size: 18px
+                font-family: "ClinicaMedium"
+                font-weight: 400
+    .partner-one
+        padding-bottom: 50px
+        &__title
+            margin-bottom: 30px
+            padding: 0
+        &__table 
+            &--pc
+                display: none
+            td
+                font-size: 16px
+                font-family: "ClinicaMedium"
+                font-weight: 400
+        &__overflow
+            display: flex
+            flex-direction: column
+            overflow-x: auto
+        &__manager
+            white-space: nowrap
+        &__mobile
+            display: revert

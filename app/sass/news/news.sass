@@ -1,0 +1,223 @@
+.news
+    padding-bottom: 100px
+    padding-top: 100px
+    &__block
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 20px 
+    &__item
+        background-color: #eaf0fa
+        img
+            width: 400px
+            height: 200px
+            object-fit: cover
+    &__itemBlock
+        padding: 30px 20px
+    &__date
+        font-size: 18px
+        color: #8396b4
+        text-align: left
+        margin-bottom: 20px
+    &__itemTitle
+        font-size: 24px
+        font-family: "ClinicaBold"
+        line-height: 30px
+        min-height: 120px
+        color: #3a445f
+        transition: .3s
+        &:hover
+            color: #33C29A
+    &__nav
+        display: flex
+        justify-content: space-between
+        margin-top: 40px
+        align-items: center
+    &__stat
+        display: flex
+    &__watch
+        display: flex
+        align-items: center
+        svg
+            width: 24px
+            height: auto
+            margin-right: 6px
+            fill: #8698B6
+        span
+            font-size: 16px
+            color: #3a445f
+    &__like
+        display: flex
+        align-items: center
+        margin-left: 20px
+        svg
+            width: 18px
+            height: auto
+            margin-right: 6px
+            fill: #8698B6
+        span
+            font-size: 16px
+            color: #3a445f
+    &__share
+        display: flex
+        align-items: center
+        svg
+            width: 18px
+            height: auto
+            margin-right: 8px
+            fill: #33C29A
+        span
+            font-size: 16px
+            color: #3a445f
+    &__more
+        display: flex
+        flex-direction: column
+        width: max-content
+        margin: 0 auto
+        align-items: center
+        margin-top: 80px
+        cursor: pointer
+    &__plus
+        background: #04b682
+        width: 80px
+        height: 80px
+        border-radius: 50%
+        position: relative
+        svg
+            fill: #fff   
+            width: 30px
+            height: auto
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+    &__moreText
+        margin-top: 20px
+        font-size: 20px
+        color: #04b682
+    &__hide
+        display: none
+
+.one-news
+    padding-top: 100px
+    padding-bottom: 100px
+    &__block
+        display: flex        
+        margin-top: 80px
+    &__article
+        width: 715px
+        margin-right: 125px
+    &__back
+        font-size: 18px
+        color: #04b682
+        &--mobile
+            display: none
+    &__sidebar
+        width: 380px
+    .article
+        &__title
+            font-size: 48px
+            color: #3a445f
+            font-family: "ClinicaBlack"
+        &__date
+            font-size: 18px
+            color: #8396b4
+            margin-bottom: 35px
+        &__nav
+            display: flex
+            margin-top: 40px
+            align-items: center
+        &__stat
+            display: flex
+        &__watch
+            display: flex
+            align-items: center
+            svg
+                width: 24px
+                height: auto
+                margin-right: 6px
+                fill: #8698B6
+            span
+                font-size: 16px
+                color: #3a445f
+        &__like
+            display: flex
+            align-items: center
+            margin-left: 20px
+            margin-right: 20px
+            position: relative
+            cursor: pointer
+            svg
+                width: 18px
+                height: auto
+                margin-right: 6px
+                fill: #8698B6
+                transition: .4s
+            span
+                font-size: 16px
+                color: #3a445f
+        
+        &__fill
+            width: 18px
+            height: auto
+            margin-right: 6px
+            fill: #8698B6
+            position: absolute
+            left: 0
+            opacity: 0
+            fill: #04b682 !important
+        &__share
+            display: flex
+            align-items: center
+            color: #8396b4
+            svg
+                width: 18px
+                height: auto
+                margin-right: 8px
+                fill: #33C29A
+            span
+                font-size: 16px
+                color: #3a445f
+        &__subtitle
+            font-size: 24px
+            margin-top: 40px
+            color: #8396b4
+            line-height: 140%
+        &__image
+            margin: 40px 0
+            width: 100%
+        &__text
+            font-size: 20px
+            color: #3a445f
+            line-height: 150%
+            margin-bottom: 40px
+            span
+                font-family: "ClinicaBold"
+            &:last-child
+                margin-bottom: 0
+        &__says
+            font-size: 20px
+            color: #3a445f
+            line-height: 150%
+            margin-bottom: 40px
+            span
+                margin-top: 40px
+                display: block
+                margin-left: 110px
+                width: 500px
+                color: #8396b4
+    .sidebar
+        display: flex
+        flex-direction: column
+        &__date
+            font-size: 18px
+            color: #8396b4
+            margin-bottom: 35px
+        &__title
+            font-size: 20px
+            font-family: "ClinicaBold"
+            color: #3a445f
+            
+        &__item
+            padding-bottom: 40px
+            border-bottom: 1px solid #8396b4
+            margin-bottom: 40px

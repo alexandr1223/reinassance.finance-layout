@@ -1,0 +1,120 @@
+@media (max-width: 1250px)
+    .news
+        &__block
+            grid-template-columns: 1fr 1fr
+        &__item
+            width: 400px
+            margin: 0 auto
+
+@media (max-width: 991px)
+    .news
+        &__block
+            grid-template-columns: 1fr
+        &__item
+            width: 400px
+            margin: 0 auto
+    .one-news
+        &__back
+            display: block
+            text-align: center
+            margin: 0 auto
+            &--mobile
+                display: block
+        &__block
+            display: flex
+            flex-direction: column
+        &__sidebar
+            width: 80%
+            max-width: 700px
+            margin: 0 auto
+            padding-top: 40px
+        &__article
+            position: relative
+            padding-bottom: 40px
+            margin: 0 auto
+            width: 80%
+            max-width: 700px
+            &::after
+                content: ''
+                position: absolute
+                bottom: 0px
+                left: 50%
+                transform: translateX(-50%)
+                width: 100px
+                height: 2px
+                background-color: #1e5893
+                background-image: linear-gradient(to right, #045ab6 0%, #04b682 100%)
+@media (max-width: 767px)
+    .news
+        padding-bottom: 60px
+        padding-top: 40px
+        &__block
+            grid-template-columns: 1fr
+        &__item
+            width: 100%
+            margin: 0 auto
+            max-width: 400px
+            img
+                width: 100%
+        &__itemTitle
+            font-size: 22px
+            line-height: 28px
+        &__date
+            font-size: 16px
+            margin-bottom: 15px
+        &__nav
+            margin-top: 15px
+        &__more
+            margin-top: 30px
+        &__plus
+            width: 70px
+            height: 70px
+            svg
+                width: 24px
+        &__moreText
+            font-size: 18px
+
+    .one-news
+        padding-top: 40px
+        padding-bottom: 80px
+        &__block
+            display: flex
+            flex-direction: column
+            margin-top: 40px
+        &__article
+            width: 100%
+            padding-bottom: 40px
+            position: relative
+        &__sidebar
+            width: 100%
+            margin-top: 40px
+        
+        .article
+            &__says
+                font-size: 18px
+                span
+                    margin-left: 0
+                    width: 100%
+                    margin-top: 30px
+                    font-size: 18px
+            &__title
+                font-size: 40px
+            &__nav
+                margin-top: 30px
+            &__sidebar
+                margin-top: 30px
+            &__subtitle
+                font-size: 22px
+                line-height: 140%
+            &__image
+                margin: 30px 0
+            &__text
+                margin-bottom: 30px
+                font-size: 18px
+                &:last-child
+                    margin-bottom: 0
+        .sidebar
+            &__date
+                margin-bottom: 30px
+            &__item
+                padding-bottom: 30px

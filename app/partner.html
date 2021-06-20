@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<nav class="header__nav">
+				<div class="header__menu">
+					<img src="img/icons/general/menu.svg" alt="" class="img-svg">
+				</div>
+				<div class="header__lang">
+					<a href="#" class="header__langLink">
+						<img src="img/icons/general/russia.svg" alt="" class="img-svg header__langLogo">
+						<img src="img/icons/general/down-arrow.svg" alt="" class="img-svg downArrow">
+					</a>
+					<div class="header__langBlock">
+						<a href="#">
+							<img src="img/icons/general/united-kingdom.svg" alt="" class="img-svg header__langLogo">
+						</a>
+					</div>
+				</div>
+				<a href="index.html" class="header__logo">
+					<img src="img/icons/general/logo.png" alt="">
+				</a>
+				<a href="index.html" class="header__logo header__logo--mobile">
+					<img src="img/icons/general/logo-mob.png" alt="">
+				</a>
+				<div class="header__support">
+					<img src="img/icons/general/mail.svg" alt="" class="img-svg header__supportIcon">
+					<span>Тех. поддержка</span>
+					<img src="img/icons/general/down-arrow.svg" alt="" class="img-svg downArrow">
+				</div>
+				<div class="header__login">
+					<img src="img/icons/general/user-login.svg" alt="" class="img-svg">
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="wrapper">
+		<main class="main">
+			
+			<div class="menu">
+				<div class="container">
+					<div class="menu__close">
+						<img src="img/icons/general/close-button.svg" alt="" class="img-svg">
+					</div>
+					<ul class="menu__list">
+						<li>
+							<a href="index.html">
+								Главная
+							</a>
+						</li>
+						<li>
+							<a href="about.html">О нас</a>
+						</li>
+						<li>
+							<a href="offers.html">Наши предложения</a>
+						</li>
+						<li>
+							<a href="transactions.html">Последние транзакции</a>
+						</li>
+						<li>
+							<a href="partner.html">Партнёрская программа</a>
+						</li>
+						<li>
+							<a href="news.html">Новости</a>
+						</li>
+						<li>
+							<a href="faq.html">FAQ</a>
+						</li>
+						<li>
+							<a href="contact.html">Контакты</a>
+						</li>
+						<li>
+							<span class="menu__reg">Регистрация</span>
+						</li>
+						<li>
+							<span class="menu__auth">Вход</span>
+						</li>
+					</ul>
+					<div class="menu__lang">
+						<a href="#" class="menu__lang--active">Ru</a>
+						<a href="#">En</a>
+					</div>
+					<div class="menu__support">
+						<img src="img/icons/general/mail.svg" alt="" class="img-svg header__supportIcon">
+						<span>Тех. поддержка</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="login">
+				<div class="container">
+					<div class="login__close">
+						<img src="img/icons/general/close-button.svg" alt="" class="img-svg">
+					</div>
+					<div class="login__title">
+						Вход
+					</div>
+					<div class="login__subtitle">
+						Пожалуйста, войдите в свой аккаунт. <br>
+						Первый раз на нашем сайте? Пройдите простую <span>регистрацию</span>
+					</div>
+					<form action="#" method="POST" class="login__form">
+						<div class="login__formTitle">
+							Логин
+						</div>
+						<input class="login__input" type="text" placeholder="напр. rf-crypto777">
+						<div class="login__formTitle">
+							Пароль
+						</div>
+						<input class="login__input" type="password" placeholder="напр. rf-crypto777">
+						<button class="login__btn formBtn">
+							Войти
+						</button>
+						<a href="#" class="login__link">Забыли пароль?</a>
+					</form>
+				</div>
+			</div>
+
+			<div class="support">
+				<div class="container">
+					<div class="support__close">
+						<img src="img/icons/general/close-button.svg" alt="" class="img-svg">
+					</div>
+					<div class="support__title">
+						Есть вопросы?
+					</div>
+					<div class="support__subtitle">
+						Свяжитесь с нашими операторами удобным для Вас способом.
+						Отвечаем в течение 15 минут. Работаем круглосуточно без выходных!
+					</div>
+					<form action="#" method="POST" class="support__form">
+						<div class="support__formTitle">
+							Имя
+						</div>
+						<input class="support__input" type="text" name="name" placeholder="напр. Джон Левис">
+						<div class="support__formTitle">
+							Телефон или Е-Mail
+						</div>
+						<input class="support__input" type="text" name="mail" placeholder="напр. + 49 000 000 000">
+						<div class="support__formTitle">
+							Сообщение
+						</div>
+						<textarea class="support__textarea" placeholder="до 500 знаков ..."></textarea>
+						<button class="support__btn formBtn">
+							Отправить
+						</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="registration">
+				<div class="container">
+					<div class="registration__close">
+						<img src="img/icons/general/close-button.svg" alt="" class="img-svg">
+					</div>
+					<div class="registration__title">
+						Регистрация
+					</div>
+					<div class="registration__subtitle">
+						Пожалуйста, заполните все поля регистрационой формы.
+						Уже есть аккаунт? Пройдите на страницу входа
+					</div>
+					<form action="#" method="POST" class="registration__form">
+						<div class="registration__item">
+							<div class="registration__formTitle">
+								Ваш лидер
+							</div>
+							<input class="registration__input" type="text" name="name" placeholder="напр. rf-crypto777">
+						</div>
+						<div class="registration__item">
+							<div class="registration__formTitle">
+								Почта
+							</div>
+							<input class="registration__input" type="text" name="mail" placeholder="">
+						</div>
+						<div class="registration__item">
+							<div class="registration__formTitle">
+								Логин
+							</div>
+							<input class="registration__input" type="text" name="login" placeholder="">
+						</div>
+						<div class="registration__item">
+							<div class="registration__formTitle">
+								Телеграм
+							</div>
+							<input class="registration__input" type="text" name="telegram" placeholder="">
+						</div>
+						<div class="registration__item">
+							<div class="registration__formTitle">
+								Телефон
+							</div>
+							<input class="registration__input" type="text" name="phone" placeholder="">
+						</div>
+						<div class="registration__item">
+							<div class="registration__formTitle">
+								Придумайте пароль *
+							</div>
+							<input class="registration__input registration__item--pass" type="password" name="password1" placeholder="*******">
+							<div class="registration__info">
+								* Не менее 12 знаков
+							</div>
+						</div>
+						<div class="registration__item registration__item--mobile">
+							<div class="registration__formTitle">
+								Повторите пароль
+							</div>
+							<input class="registration__input" type="password" name="password2" placeholder="*******">
+						</div>
+						<div class="registration__item">
+							<a href="#" class="registration__sms">
+								Выслать СМС с кодом подтверждения
+							</a>
+							<div class="registration__itemRow">
+								<div class="registration__itemSmall">
+									<div class="registration__formTitle">
+										Введите код
+									</div>
+									<input class="registration__input" type="text" name="sms" placeholder="********">
+								</div>
+								<button class="registration__btnSms">Подтвердить код</button>
+							</div>
+						</div>
+						<div class="registration__item registration__item--pc">
+							<div class="registration__formTitle">
+								Повторите пароль
+							</div>
+							<input class="registration__input" type="password" name="password2" placeholder="*******">
+						</div>
+						<button class="registration__btn formBtn">
+							Создать аккаунт
+						</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="first first--pages">
+				<div class="container">
+					<ul class="first__nav">
+						<li>
+							<a href="index.html" class="active">
+								Главная
+							</a>
+						</li>
+						<li>
+							<a href="about.html">
+								О нас                 
+							</a>
+						</li>
+						<li>
+							<a href="partner.html">
+								Партнёрская программа
+							</a>
+						</li>
+						<li>
+							<a href="news.html">
+								Новости
+							</a>
+						</li>
+						<li>
+							<a href="faq.html">
+								FAQ
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								Контакты
+							</a>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+
+			<div class="partner-ref">
+				<div class="container">
+					<h1 class="partner-ref__title title">
+						Партнёрская программа
+					</h1>
+					<h2 class="partner-ref__subtitle subtitle">
+						Мы позаботились о <span>наилучшем решении</span> для вашего бизнеса!
+						Приглашайте друзей, рекламируйте <span>партнерскую</span> ссылку.
+						Зарабатывайте <span>вместе</span> без ограничений!
+					</h2>
+					<div class="partner-ref__overflow">
+						<table class="partner-ref__table">
+							<tr>
+								<td colspan="2" class="partner-ref__top partner-ref__top--big partner-ref__bold">Реферальный бонус 1.0</td>
+								<td class="partner-ref__top partner-ref__top--small">Пример.
+									деп. 1</td>
+								<td class="partner-ref__top partner-ref__top--small">Пример.
+									деп. 2</td>
+								<td class="partner-ref__top partner-ref__top--small">Пример.
+									деп. 3</td>
+								<td class="partner-ref__top partner-ref__top--small">Пример.
+									деп. 4</td>
+								<td class="partner-ref__top partner-ref__top--small">Пример.
+									деп. 5</td>
+								<td class="partner-ref__top partner-ref__top--small">Пример.
+								деп. 6</td>
+								<td class="partner-ref__top partner-ref__top--small">Пример.
+									деп. 7</td>
+								<td class="partner-ref__top partner-ref__top--small">Пример.
+									деп. 8</td>
+							</tr>
+							<tr>
+								<td class="partner-ref__line partner-ref__line--title">
+									Линия
+								<td class="partner-ref__reward partner-ref__reward--title">Вознагрождение</td>
+								<td class="partner-ref__rewardItem">$10,00</td>
+								<td class="partner-ref__rewardItem">$100,00
+								</td>
+								<td class="partner-ref__rewardItem">$1000,00
+								</td>
+								<td class="partner-ref__rewardItem">$4000,00
+								</td>
+								<td class="partner-ref__rewardItem">$5000,00
+								</td>
+								<td class="partner-ref__rewardItem">$22500,00
+								</td>
+								<td class="partner-ref__rewardItem">$40000,00
+								</td>
+								<td class="partner-ref__rewardItem">$11000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-ref__line">
+									1
+								<td class="partner-ref__reward partner-ref__rewardItem--green">5,00%</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$0,50
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$5,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$50,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$200,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$250,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$1125,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$2000,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$550,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-ref__line">
+									2
+								<td class="partner-ref__reward partner-ref__rewardItem--green">4,00%
+
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$0,40
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$4,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$40,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$160,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$200,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$900,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$1600,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$440,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-ref__line">
+									3
+								<td class="partner-ref__reward partner-ref__rewardItem--green">3,00%
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$0,30
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$3,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$30,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$120,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$150,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$675,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$1200,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$330,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-ref__line">
+									4
+								<td class="partner-ref__reward partner-ref__rewardItem--green">2,00%
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$0,20
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$2,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$20,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$80,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$100,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$450,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$800,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--blue">$220,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-ref__line">
+									5
+								<td class="partner-ref__reward partner-ref__rewardItem--green">1,00%
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$01,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$1,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$10,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$40,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$50,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$225,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$400,00
+								</td>
+								<td class="partner-ref__rewardItem partner-ref__rewardItem--green">$110,00
+								</td>
+							</tr>
+
+						</table>
+					</div>	
+				</div>
+			</div>
+
+			<div class="partner-one">
+				<div class="container">
+					<h2 class="partner-one__title">
+						Партнёрская программа 1.0
+					</h2>
+					<div class="partner-one__overflow">
+						<table class="partner-one__table">
+							<tr>
+								<td class="partner-one__top partner-one__top--status">Статус</td>
+								<td class="partner-one__top partner-one__top--depo">Личный депозит</td>
+								<td class="partner-one__top partner-one__top--count">Оборот структуры</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 1
+								</td>
+								<td class="partner-one__depo">$10,00
+								</td>
+								<td class="partner-one__count">$30,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 2
+								</td>
+								<td class="partner-one__depo">$50,00
+								</td>
+								<td class="partner-one__count">$200,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 3
+								</td>
+								<td class="partner-one__depo">$100,00
+								</td>
+								<td class="partner-one__count">$1000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 4
+								</td>
+								<td class="partner-one__depo">$200,00
+								</td>
+								<td class="partner-one__count">$2000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 5
+								</td>
+								<td class="partner-one__depo">$500,00
+								</td>
+								<td class="partner-one__count">$6000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 6
+								</td>
+								<td class="partner-one__depo">$1100,00
+								</td>
+								<td class="partner-one__count">$10000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 7
+								</td>
+								<td class="partner-one__depo">$2000,00
+								</td>
+								<td class="partner-one__count">$30000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 8
+								</td>
+								<td class="partner-one__depo">$4000,00
+								</td>
+								<td class="partner-one__count">$60000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 9
+								</td>
+								<td class="partner-one__depo">$5000,00
+								</td>
+								<td class="partner-one__count">$90000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 10
+								</td>
+								<td class="partner-one__depo">$6000,00
+								</td>
+								<td class="partner-one__count">$150000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 11
+								</td>
+								<td class="partner-one__depo">$7000,00
+								</td>
+								<td class="partner-one__count">$210000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 12
+								</td>
+								<td class="partner-one__depo">$8000,00
+								</td>
+								<td class="partner-one__count">$330000,00
+								</td>
+							</tr>
+							<tr class="partner-one__mobile">
+								<td class="partner-one__manager">Менеджер 13
+								</td>
+								<td class="partner-one__depo">$10,00
+								</td>
+								<td class="partner-one__count">$30,00
+								</td>
+							</tr>
+							<tr class="partner-one__mobile">
+								<td class="partner-one__manager">Менеджер 14
+								</td>
+								<td class="partner-one__depo">$50,00
+								</td>
+								<td class="partner-one__count">$200,00
+								</td>
+							</tr>
+							<tr class="partner-one__mobile">
+								<td class="partner-one__manager">Менеджер 15
+								</td>
+								<td class="partner-one__depo">$100,00
+								</td>
+								<td class="partner-one__count">$1000,00
+								</td>
+							</tr>
+							<tr class="partner-one__mobile">
+								<td class="partner-one__manager">Менеджер 16
+								</td>
+								<td class="partner-one__depo">$200,00
+								</td>
+								<td class="partner-one__count">$2000,00
+								</td>
+							</tr>
+							<tr class="partner-one__mobile">
+								<td class="partner-one__manager">Менеджер 17
+								</td>
+								<td class="partner-one__depo">$500,00
+								</td>
+								<td class="partner-one__count">$6000,00
+								</td>
+							</tr>
+							<tr class="partner-one__mobile">
+								<td class="partner-one__manager">Менеджер 18
+								</td>
+								<td class="partner-one__depo">$1100,00
+								</td>
+								<td class="partner-one__count">$10000,00
+								</td>
+							</tr>
+							<tr class="partner-one__mobile">
+								<td class="partner-one__manager">Менеджер 19
+								</td>
+								<td class="partner-one__depo">$2000,00
+								</td>
+								<td class="partner-one__count">$30000,00
+								</td>
+							</tr>
+							<tr class="partner-one__mobile">
+								<td class="partner-one__manager">Менеджер 20
+								</td>
+								<td class="partner-one__depo">$4000,00
+								</td>
+								<td class="partner-one__count">$60000,00
+								</td>
+							</tr>
+							<tr class="partner-one__mobile">
+								<td class="partner-one__manager">Менеджер 21
+								</td>
+								<td class="partner-one__depo">$5000,00
+								</td>
+								<td class="partner-one__count">$90000,00
+								</td>
+							</tr>
+							<tr class="partner-one__mobile">
+								<td class="partner-one__manager">Менеджер 22
+								</td>
+								<td class="partner-one__depo">$6000,00
+								</td>
+								<td class="partner-one__count">$150000,00
+								</td>
+							</tr>
+							<tr class="partner-one__mobile">
+								<td class="partner-one__manager">Менеджер 23
+								</td>
+								<td class="partner-one__depo">$7000,00
+								</td>
+								<td class="partner-one__count">$210000,00
+								</td>
+							</tr>
+							<tr class="partner-one__mobile">
+								<td class="partner-one__manager">Менеджер 24
+								</td>
+								<td class="partner-one__depo">$8000,00
+								</td>
+								<td class="partner-one__count">$330000,00
+								</td>
+							</tr>
+						</table>
+						<table class="partner-one__table partner-one__table--pc">
+							<tr>
+								<td class="partner-one__top partner-one__top--status">Статус</td>
+								<td class="partner-one__top partner-one__top--depo">Личный депозит</td>
+								<td class="partner-one__top partner-one__top--count">Оборот структуры</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 13
+								</td>
+								<td class="partner-one__depo">$10,00
+								</td>
+								<td class="partner-one__count">$30,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 14
+								</td>
+								<td class="partner-one__depo">$50,00
+								</td>
+								<td class="partner-one__count">$200,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 15
+								</td>
+								<td class="partner-one__depo">$100,00
+								</td>
+								<td class="partner-one__count">$1000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 16
+								</td>
+								<td class="partner-one__depo">$200,00
+								</td>
+								<td class="partner-one__count">$2000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 17
+								</td>
+								<td class="partner-one__depo">$500,00
+								</td>
+								<td class="partner-one__count">$6000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 18
+								</td>
+								<td class="partner-one__depo">$1100,00
+								</td>
+								<td class="partner-one__count">$10000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 19
+								</td>
+								<td class="partner-one__depo">$2000,00
+								</td>
+								<td class="partner-one__count">$30000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 20
+								</td>
+								<td class="partner-one__depo">$4000,00
+								</td>
+								<td class="partner-one__count">$60000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 21
+								</td>
+								<td class="partner-one__depo">$5000,00
+								</td>
+								<td class="partner-one__count">$90000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 22
+								</td>
+								<td class="partner-one__depo">$6000,00
+								</td>
+								<td class="partner-one__count">$150000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 23
+								</td>
+								<td class="partner-one__depo">$7000,00
+								</td>
+								<td class="partner-one__count">$210000,00
+								</td>
+							</tr>
+							<tr>
+								<td class="partner-one__manager">Менеджер 24
+								</td>
+								<td class="partner-one__depo">$8000,00
+								</td>
+								<td class="partner-one__count">$330000,00
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="container">
+					<h2 class="question__title">
+						Возникли вопросы?
+					</h2>
+					<h3 class="question__smallTitle">
+						Делитесь <span>персональный ссылкой</span> и зарабатывайте до <span>10% реферальных наград</span>
+						благодаря <span>пятиуровневой</span> реферальной программе.
+					</h3>
+					<h3 class="question__smallTitle">
+						Для получения реферального <span>вознаграждения</span> необходимо
+						отправить в стейкинг продукта <span>не менее _10</span>.
+					</h3>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__block">
+					<a href="index.html" class="footer__logo">
+						<img src="img/icons/general/footer-logo.svg" alt="" class="img-svg">
+					</a>
+					<div class="footer__rights">
+						copyright 2021
+					</div>
+					<a href="index.html" class="footer__logo footer__logo--mobile">
+						<img src="img/icons/general/footer-logo-mobile.png" alt="" class="img-svg">
+					</a>
+					<div class="footer__social">
+						<a href="#">
+							<img src="img/icons/social/telegram.svg" alt="" class="img-svg">
+						</a>
+						<a href="#">
+							<img src="img/icons/social/instagram.svg" alt="" class="img-svg">
+						</a>
+						<a href="#">
+							<img src="img/icons/social/whatsapp.svg" alt="" class="img-svg">
+						</a>
+						<a href="#">
+							<img src="img/icons/social/twitter.svg" alt="" class="img-svg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
