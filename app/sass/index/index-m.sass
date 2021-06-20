@@ -249,6 +249,7 @@
         &__form
             flex-direction: column
             width: 400px
+            width: 100%
             margin: 0 auto
             margin-bottom: 110px
         &__input
@@ -533,6 +534,8 @@
     .support,
     .registration,
     .login
+        padding-bottom: 150px
+        overflow-y: scroll
         &__title
             font-size: 28px
             margin-top: 40px
@@ -599,11 +602,10 @@
                 color: #fff
                 margin-top: 15px
     .registration
-        overflow-y: scroll
-        padding-bottom: 30px
         &__form
-            grid-template-columns: 1fr
-            grid-gap: 0
+            display: flex
+            flex-direction: column
+            grid-gap: unset
         &__sms
             font-size: 14px
             margin: 10px 0
@@ -623,5 +625,4 @@
         &__itemRow
             margin-top: 10px
     .support
-        padding-bottom: 30px
         overflow-y: scroll
