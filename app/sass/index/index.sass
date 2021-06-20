@@ -2,6 +2,10 @@
     background: url('../img/bg/header.png') center center/cover no-repeat
     padding-top: 50px
     padding-bottom: 60px
+    margin-top: 100px
+    &--pages
+        background: url('../img/bg/bg-header.jpg') center center/cover no-repeat
+        height: 200px
     &__nav
         display: flex
         justify-content: space-between
@@ -21,16 +25,20 @@
     &__nums
         display: flex
     &__item
-        font-size: 56px
+        font-size: 44px
         color: #77e7ff
         font-family: "ClinicaBlack"
         white-space: nowrap
+        margin: 0 auto
+        width: 100%
+        text-align: center
         span
             display: block
             font-size: 18px
             margin-top: 5px
+            text-align: center
         &:not(:last-child)
-            margin-right: 130px
+            margin-right: 0
     &__subtitle
         margin-top: 115px
         font-size: 36px
@@ -239,6 +247,8 @@
         display: grid
         grid-template-columns: 1fr 1fr 1fr
         grid-gap: 20px
+        &--mobile
+            display: none
     &__item
         background-color: #d7e1f2
         padding: 20px 10px 20px 20px
@@ -318,12 +328,26 @@
         span
             display: block
     &__line
-        width: 100%
+        width: 930px
         margin-bottom: 40px
         margin-top: 20px
+        input
+            webkit-appearance: none
+            appearance: none
+            padding: 0
+            overflow: hidden
+            background-color: #0e81b6
+            border-radius: 10px
+            &::-webkit-slider-thumb
+                -webkit-appearance: none
+                width: 15px
+                height: 15px
+                border: 4px solid #fff
+                background-color: #dae3f3
+                border-radius: 50%
+                box-shadow: -930px 0 0 930px #38aade
     &__lineItem
         width: 100%
-        background-image: linear-gradient(to right, #38aade 0%, #04b682 100%)
     &__nav
         display: flex
         justify-content: space-between
@@ -567,6 +591,8 @@
         svg
             width: 400px
             height: 63px
+        &--mobile
+            display: none
     &__rights
         width: 33%
         color: #375c86
@@ -591,7 +617,155 @@
                 transform: translate(-50%, -50%)
                 width: 30px
                 height: auto
+                fill: #20314F
             &:hover
                 background-color: #04b682
             &:not(:last-child)
                 margin-right: 7px
+
+.menu,
+.support,
+.login,
+.registration
+    overflow-y: scroll
+    position: fixed
+    top: -150%
+    left: 0
+    width: 100%
+    height: 100vh
+    background-color: #045ab6
+    transition: .7s
+    z-index: 10
+    padding-bottom: 30px
+    &__item
+        &--mobile
+            display: none
+    &__close
+        cursor: pointer
+        svg
+            margin: 0 auto
+            display: block
+            width: 40px
+            height: 40px
+            fill: #fff
+            margin-top: 60px
+    &__list
+        margin-top: 100px
+        li
+            text-align: center
+            &:not(:last-child)
+                margin-bottom: 30px
+            a
+                text-align: center
+                color: #fff
+                font-size: 24px
+                transition: .4s
+                &:hover
+                    color: #77e7ff 
+    &__title
+        text-align: center
+        font-size: 36px
+        color: #fff
+        margin-bottom: 50px
+        margin-top: 60px
+    &__subtitle
+        font-size: 18px
+        text-align: center
+        line-height: 140%
+        color: #fff
+        max-width: 650px
+        font-weight: 300
+        margin: 0 auto
+        margin-bottom: 40px
+        span
+            color: #77e7ff
+            cursor: pointer
+    &__form
+        display: flex
+        flex-direction: column
+        width: 400px
+        margin: 0 auto
+    &__formTitle
+        color: #b3c3dd
+        font-size: 18px
+        margin-bottom: 12px
+    &__input
+        font-size: 16px
+        padding: 20px 13px
+        margin-bottom: 20px
+        background: transparent
+        border-radius: 10px
+        border: 2px solid #0e81b6
+        color: #fff 
+        &::placeholder
+            color: #629cb7
+    &__textarea
+        resize: none
+        font-size: 16px
+        padding: 20px 13px
+        margin-bottom: 20px
+        background: transparent
+        border-radius: 10px
+        border: 2px solid #0e81b6
+        height: 160px
+        color: #fff 
+        &::placeholder
+            color: #629cb7
+    &__btn
+        margin: 0 auto
+        margin-top: 20px
+        width: 242px
+    &__link
+        margin-top: 40px
+        color: #00b6d3
+        font-size: 18px
+        text-align: center
+    &__lang
+        display: none
+    &__support
+        display: none
+
+.registration
+    &__form
+        display: grid
+        grid-template-columns: 1fr 1fr
+        width: 820px
+        grid-gap: 20px
+    &__input
+        width: 100%
+        margin-bottom: 0
+    &__itemSmall
+        display: flex
+        flex-direction: column
+    &__itemRow
+        display: flex
+        align-items: flex-end
+    &__item
+        position: relative
+    &__sms
+        color: #77e7ff
+        position: absolute
+        top: -35px
+        font-size: 19px
+        font-weight: 400
+    &__info
+        color: #629cb7
+        font-size: 18px
+        margin-top: 12px
+    &__btnSms
+        border-radius: 10px
+        background-color: #0e81b6  
+        height: 60px
+        color: #77e7ff
+        margin-left: 20px
+        width: 190px
+        border: none
+    &__btn
+        grid-column-start: 1
+        grid-column-end: 3
+        width: max-content
+    &__title
+        margin: 50px 0 40px 0
+    &__close
+        svg
+            margin-top: 45px

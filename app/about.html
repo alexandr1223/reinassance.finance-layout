@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<nav class="header__nav">
+				<div class="header__menu">
+					<img src="img/icons/general/menu.svg" alt="" class="img-svg">
+				</div>
+				<div class="header__lang">
+					<a href="#" class="header__langLink">
+						<img src="img/icons/general/russia.svg" alt="" class="img-svg header__langLogo">
+						<img src="img/icons/general/down-arrow.svg" alt="" class="img-svg downArrow">
+					</a>
+					<div class="header__langBlock">
+						<a href="#">
+							<img src="img/icons/general/united-kingdom.svg" alt="" class="img-svg header__langLogo">
+						</a>
+					</div>
+				</div>
+				<a href="index.html" class="header__logo">
+					<img src="img/icons/general/logo.png" alt="">
+				</a>
+				<a href="index.html" class="header__logo header__logo--mobile">
+					<img src="img/icons/general/logo-mob.png" alt="">
+				</a>
+				<div class="header__support">
+					<img src="img/icons/general/mail.svg" alt="" class="img-svg header__supportIcon">
+					<span>Тех. поддержка</span>
+					<img src="img/icons/general/down-arrow.svg" alt="" class="img-svg downArrow">
+				</div>
+				<div class="header__login">
+					<img src="img/icons/general/user-login.svg" alt="" class="img-svg">
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="wrapper">
+		<main class="main">
+			
+			<div class="menu">
+				<div class="container">
+					<div class="menu__close">
+						<img src="img/icons/general/close-button.svg" alt="" class="img-svg">
+					</div>
+					<ul class="menu__list">
+						<li>
+							<a href="#">
+								Главная
+							</a>
+						</li>
+						<li>
+							<a href="about.html">О нас</a>
+						</li>
+						<li>
+							<a href="#">Наши предложения</a>
+						</li>
+						<li>
+							<a href="#">Последние транзакции</a>
+						</li>
+						<li>
+							<a href="#">Партнёрская программа</a>
+						</li>
+						<li>
+							<a href="#">Новости</a>
+						</li>
+						<li>
+							<a href="#">FAQ</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+						<li>
+							<a href="#">Регистрация</a>
+						</li>
+						<li>
+							<a href="#">Вход</a>
+						</li>
+					</ul>
+					<div class="menu__lang">
+						<a href="#" class="menu__lang--active">Ru</a>
+						<a href="#">En</a>
+					</div>
+					<div class="menu__support">
+						<img src="img/icons/general/mail.svg" alt="" class="img-svg header__supportIcon">
+						<span>Тех. поддержка</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="login">
+				<div class="container">
+					<div class="login__close">
+						<img src="img/icons/general/close-button.svg" alt="" class="img-svg">
+					</div>
+					<div class="login__title">
+						Вход
+					</div>
+					<div class="login__subtitle">
+						Пожалуйста, войдите в свой аккаунт. <br>
+						Первый раз на нашем сайте? Пройдите простую <span>регистрацию</span>
+					</div>
+					<form action="#" method="POST" class="login__form">
+						<div class="login__formTitle">
+							Логин
+						</div>
+						<input class="login__input" type="text" placeholder="напр. rf-crypto777">
+						<div class="login__formTitle">
+							Пароль
+						</div>
+						<input class="login__input" type="password" placeholder="напр. rf-crypto777">
+						<button class="login__btn formBtn">
+							Войти
+						</button>
+						<a href="#" class="login__link">Забыли пароль?</a>
+					</form>
+				</div>
+			</div>
+
+			<div class="support">
+				<div class="container">
+					<div class="support__close">
+						<img src="img/icons/general/close-button.svg" alt="" class="img-svg">
+					</div>
+					<div class="support__title">
+						Есть вопросы?
+					</div>
+					<div class="support__subtitle">
+						Свяжитесь с нашими операторами удобным для Вас способом.
+						Отвечаем в течение 15 минут. Работаем круглосуточно без выходных!
+					</div>
+					<form action="#" method="POST" class="support__form">
+						<div class="support__formTitle">
+							Имя
+						</div>
+						<input class="support__input" type="text" name="name" placeholder="напр. Джон Левис">
+						<div class="support__formTitle">
+							Телефон или Е-Mail
+						</div>
+						<input class="support__input" type="text" name="mail" placeholder="напр. + 49 000 000 000">
+						<div class="support__formTitle">
+							Сообщение
+						</div>
+						<textarea class="support__textarea" placeholder="до 500 знаков ..."></textarea>
+						<button class="support__btn formBtn">
+							Отправить
+						</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="registration">
+				<div class="container">
+					<div class="registration__close">
+						<img src="img/icons/general/close-button.svg" alt="" class="img-svg">
+					</div>
+					<div class="registration__title">
+						Регистрация
+					</div>
+					<div class="registration__subtitle">
+						Пожалуйста, заполните все поля регистрационой формы.
+						Уже есть аккаунт? Пройдите на страницу входа
+					</div>
+					<form action="#" method="POST" class="registration__form">
+						<div class="registration__item">
+							<div class="registration__formTitle">
+								Ваш лидер
+							</div>
+							<input class="registration__input" type="text" name="name" placeholder="напр. rf-crypto777">
+						</div>
+						<div class="registration__item">
+							<div class="registration__formTitle">
+								Почта
+							</div>
+							<input class="registration__input" type="text" name="mail" placeholder="">
+						</div>
+						<div class="registration__item">
+							<div class="registration__formTitle">
+								Логин
+							</div>
+							<input class="registration__input" type="text" name="login" placeholder="">
+						</div>
+						<div class="registration__item">
+							<div class="registration__formTitle">
+								Телеграм
+							</div>
+							<input class="registration__input" type="text" name="telegram" placeholder="">
+						</div>
+						<div class="registration__item">
+							<div class="registration__formTitle">
+								Телефон
+							</div>
+							<input class="registration__input" type="text" name="phone" placeholder="">
+						</div>
+						<div class="registration__item">
+							<div class="registration__formTitle">
+								Придумайте пароль *
+							</div>
+							<input class="registration__input registration__item--pass" type="password" name="password1" placeholder="*******">
+							<div class="registration__info">
+								* Не менее 12 знаков
+							</div>
+						</div>
+						<div class="registration__item registration__item--mobile">
+							<div class="registration__formTitle">
+								Повторите пароль
+							</div>
+							<input class="registration__input" type="password" name="password2" placeholder="*******">
+						</div>
+						<div class="registration__item">
+							<a href="#" class="registration__sms">
+								Выслать СМС с кодом подтверждения
+							</a>
+							<div class="registration__itemRow">
+								<div class="registration__itemSmall">
+									<div class="registration__formTitle">
+										Введите код
+									</div>
+									<input class="registration__input" type="text" name="sms" placeholder="********">
+								</div>
+								<button class="registration__btnSms">Подтвердить код</button>
+							</div>
+						</div>
+						<div class="registration__item registration__item--pc">
+							<div class="registration__formTitle">
+								Повторите пароль
+							</div>
+							<input class="registration__input" type="password" name="password2" placeholder="*******">
+						</div>
+						<button class="registration__btn formBtn">
+							Создать аккаунт
+						</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="first first--pages">
+				<div class="container">
+					<ul class="first__nav">
+						<li>
+							<a href="index.html" class="active">
+								Главная
+							</a>
+						</li>
+						<li>
+							<a href="about.html">
+								О нас                 
+							</a>
+						</li>
+						<li>
+							<a href="partners.html">
+								Партнёрская программа
+							</a>
+						</li>
+						<li>
+							<a href="news.html">
+								Новости
+							</a>
+						</li>
+						<li>
+							<a href="faq.html">
+								FAQ
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								Контакты
+							</a>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+
+			<div class="about">
+				<div class="container">
+					<h1 class="about__title title">
+						О нас
+					</h1>
+					<p class="about__text">
+						<span class="about__text--upper">Renaissance.Finance</span> - технологическая компания, основным видом деятельности которой является <span>инвестирование</span> в высокодоходные активы.
+					</p>
+					<p class="about__text">
+						Наше <span>основное преимущество</span> это разработанный специалистами компании программный комплекс, занимающийся
+						<span>Data mining</span>, задача которого — <span>моделирования и прогнозирования</span>, основанные на применении деревьев решений,
+						искусственных нейронных сетей, нечёткой логики.
+					</p>
+					<p class="about__text">
+						<span class="about__text--upper">Renaissance.Finance</span>  успешно работает с <span>криптовалютами</span>, опционами, золотом и фондовым рынком.
+					</p>
+					<p class="about__text">
+						Системный и <span>взвешенный подход</span> к выбору активов, дает возможность обеспечить <span>удовлетворительную доходность</span>
+						для всех инвесторов компании. Сейчас стало сложнее улавливать сигналы, <span>находить связи</span> между ними и ориентироваться,
+						куда пойдет тренд - <span>данных стало больше</span> и человеку не под силу <span>проанализировать</span> и понять каждый из них, сегодня
+						как никогда социальные сети и различные комьюнити влияют на <span>инвестиционную</span> стоимость актива.
+					</p>
+					<p class="about__text">
+						Наши <span>специалисты</span> уделяют особое внимание <span>изучению</span> тематических социальных площадок на предмет настроений
+						и <span>скрытых тенденций</span>, которые могут сформировать понимания зарождающегося <span>тренда</span>.
+					</p>
+					<p class="about__text">
+						Программный комплекс <span class="about__text--upper">Renaissance.Finance</span> идентифицирует <span>скрытые связи</span> во множествах данных и находит
+						определенные сигналы, благодаря которым наши специалисты, составляют <span>сбалансированный</span> инвестиционный портфель.
+					</p>
+					<p class="about__text">
+						Инвестиционные планы предлагаемые нашей компанией сформированы на основе <span>оптимальных</span> торговых стратегиях
+						и практиках, мы <span>гарантируем стабильную прибыль</span> и отсутствие рисков для наших инвесторов.
+					</p>
+				</div>
+			</div>
+
+			<div class="offers">
+				<div class="container">
+					<h2 class="offers__title title">
+						Наши предложения <span>03</span>
+					</h2>
+					<h3 class="offers__subtitle subtitle">
+						Инвестиционное предложение, <span>доступное</span> каждому!
+						Доверив свои инвестиции <span>профессионалам</span>, каждый партнёр гарантированно получает до <span>2.9%</span> в сутки.
+						Предлагаем Вам выбрать один из инвестиционных пакетов:
+					</h3>
+					<div class="offers__block">
+						<div class="offers__item offers__item--first">
+							<div class="offers__img">
+								<img src="img/icons/offers/rocket.svg" alt="" class="img-svg">
+							</div>
+							<div class="offers__itemTitle">
+								RF Start
+							</div>
+							<div class="offers__percent">
+								1.4%
+							</div>
+							<div class="offers__text">
+								Мин. инвестиция: 10 $ <br>
+								Макс. инвестиция: 100 $ <br>
+								Работает: 90 дней
+							</div>
+							<div class="offers__btn">
+								Инвестировать
+							</div>
+						</div>
+						<div class="offers__item offers__item--second">
+							<div class="offers__img">
+								<img src="img/icons/offers/growth.svg" alt="" class="img-svg">
+							</div>
+							<div class="offers__itemTitle">
+								RF Medium
+							</div>
+							<div class="offers__percent">
+								1.8%
+							</div>
+							<div class="offers__text">
+								Мин. инвестиция: 10 $ <br>
+								Макс. инвестиция: 100 $ <br>
+								Работает: 90 дней
+							</div>
+							<div class="offers__btn">
+								Инвестировать
+							</div>
+						</div>
+						<div class="offers__item offers__item--third">
+							<div class="offers__img">
+								<img src="img/icons/offers/strategy.svg" alt="" class="img-svg">
+							</div>
+							<div class="offers__itemTitle">
+								RF Business
+							</div>
+							<div class="offers__percent">
+								2.0%
+							</div>
+							<div class="offers__text">
+								Мин. инвестиция: 100 $ <br> 
+								Макс. инвестиция: 100 $ <br>
+								Работает: 90 дней								
+							</div>
+							<div class="offers__btn">
+								Инвестировать
+							</div>
+						</div>
+						<div class="offers__item offers__item--fourth">
+							<div class="offers__img">
+								<img src="img/icons/offers/creative.svg" alt="" class="img-svg">
+							</div>
+							<div class="offers__itemTitle">
+								RF Professional
+							</div>
+							<div class="offers__percent">
+								2.4%
+							</div>
+							<div class="offers__text">
+								Мин. инвестиция: 1000 $ <br>
+								Макс. инвестиция: 100 $ <br>
+								Работает: 90 дней
+							</div>
+							<div class="offers__btn">
+								Инвестировать
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="question">
+				<div class="container">
+					<h2 class="question__title">
+						Возникли вопросы?
+					</h2>
+					<h3 class="question__subtitle">
+						Свяжитесь с нами!
+					</h3>
+					<div class="question__img">
+						<img src="img/icons/general/mail.svg" alt="" class="img-svg">
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__block">
+					<a href="index.html" class="footer__logo">
+						<img src="img/icons/general/footer-logo.svg" alt="" class="img-svg">
+					</a>
+					<div class="footer__rights">
+						copyright 2021
+					</div>
+					<a href="index.html" class="footer__logo footer__logo--mobile">
+						<img src="img/icons/general/footer-logo-mobile.png" alt="" class="img-svg">
+					</a>
+					<div class="footer__social">
+						<a href="#">
+							<img src="img/icons/social/telegram.svg" alt="" class="img-svg">
+						</a>
+						<a href="#">
+							<img src="img/icons/social/instagram.svg" alt="" class="img-svg">
+						</a>
+						<a href="#">
+							<img src="img/icons/social/whatsapp.svg" alt="" class="img-svg">
+						</a>
+						<a href="#">
+							<img src="img/icons/social/twitter.svg" alt="" class="img-svg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

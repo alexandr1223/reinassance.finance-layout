@@ -1,12 +1,16 @@
 .header
     background: #E0E9F9
     height: 100px
+    position: fixed
+    width: 100%
+    z-index: 5
     &__nav
         display: flex
         align-items: center
         height: 100px
     &__menu
         margin-right: 150px
+        cursor: pointer
         svg
             width: 66px
             fill: #045AB6
@@ -43,6 +47,8 @@
             height: auto
     &__logo
         margin-right: 100px
+        &--mobile
+            display: none
     &__support
         display: flex
         align-items: center
@@ -64,6 +70,7 @@
         svg
             width: 40px
             fill: #045AB6
+            height: auto
         
 .downArrow
     width: 16px

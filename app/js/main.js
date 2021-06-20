@@ -37,19 +37,21 @@ $(function () {
             month.textContent = (sum*24*30).toFixed(8);
         }
 
-        sumInput.addEventListener('input', (e) => {
-            takeSumValue();
-        })
-        currency.addEventListener('change', (e) => {
-            takeSumValue();
-        })
-        plan.addEventListener('change', (e) => {
-            takeSumValue();
-        })
-        line.addEventListener('input', () => {
-            takeSumValue();
-            percent.textContent = line.value;
-        })
+        if (document.querySelector('.calc')) {
+            sumInput.addEventListener('input', (e) => {
+                takeSumValue();
+            })
+            currency.addEventListener('change', (e) => {
+                takeSumValue();
+            })
+            plan.addEventListener('change', (e) => {
+                takeSumValue();
+            })
+            line.addEventListener('input', () => {
+                takeSumValue();
+                percent.textContent = line.value;
+            })
+        }
     }
     calc();
 
@@ -61,11 +63,63 @@ $(function () {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: true,
-                
-                prevArrow: "<img src='../images/svg/arrow.svg' class='prev' alt=''>",
-                nextArrow: "<img src='../images/svg/arrow.svg' class='next' alt=''>",
+                prevArrow: "<img src='../img/icons/mobile-m/first-left.png' class='prev' alt=''>",
+                nextArrow: "<img src='../img/icons/mobile-m/first-right.png' class='next' alt=''>",
+            });
+            $('.min-investment__block--mobile').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                prevArrow: "<img src='../img/icons/mobile-m/horizontal-left.png' class='prev' alt=''>",
+                nextArrow: "<img src='../img/icons/mobile-m/horizontal-right.png' class='next' alt=''>",
             });
         } 
     }
     firstScreenSlider();
+
+    function menu(menuBtn, block, close) {
+        if (document.querySelector(menuBtn)) {
+            document.querySelector(menuBtn).addEventListener('click', () => {
+                document.querySelector(block).style.cssText = 'top: 0';
+                document.body.style.overflow = "hidden"
+            })
+            document.querySelector('.login__subtitle span').addEventListener('click', () => {
+                document.querySelector('.registration').style.cssText = 'top: 0%';
+                setTimeout(function () {
+                    document.querySelector('.login').style.cssText = 'top: -150%';
+                }, 700)
+            })            
+            document.querySelector(close).addEventListener('click', () => {
+                document.body.style.overflow = "auto"
+                document.querySelector(block).style.cssText = 'top: -150%';
+            })
+        }
+    } 
+    menu('.header__menu', '.menu', '.menu__close');
+    menu('.header__support', '.support', '.support__close');
+    menu('.header__login', '.login', '.login__close');
+    menu('.registration__close', '.registration', '.registration__close');
+    menu('.question__img', '.support', '.support__close')
+
+    function menuMobile(menuBtn, block, close) {
+        if (document.querySelector(menuBtn)) {
+            document.querySelector(menuBtn).addEventListener('click', () => {
+                document.querySelector(block).style.cssText = 'top: 0';
+            })
+            document.querySelector('.menu__support').addEventListener('click', () => {
+                document.querySelector('.support').style.cssText = 'top: 0%';
+                setTimeout(function () {
+                    document.querySelector('.menu').style.cssText = 'top: -150%';
+                }, 700)
+            })            
+            document.querySelector(close).addEventListener('click', () => {
+                console.log(close)
+                document.querySelector(block).style.cssText = 'top: -150%';
+            })
+        }
+    }
+    menuMobile();
+    menuMobile('.menu__support', '.support', '.support__close')
+    
 });
